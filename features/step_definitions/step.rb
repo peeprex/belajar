@@ -10,7 +10,7 @@ Given (/^User Open index$/) do
 
   driver.navigate.to 'file:///home/fandisetiawan/nikola/dashboard/index.html'
   driver.find_element(:xpath,'/html/body/div/div[2]/nav/div/div[2]/form/div/input').send_keys 'kamu dapat mecari beasiswa disini'
-sleep 0.1
+sleep 0.2
   driver.find_element(:xpath,'/html/body/div/div[2]/nav/div/div[2]/ul/li[1]/a/i').click
 sleep 0.1
   driver.find_element(:xpath,'/html/body/div/div[2]/div/div/div[1]/div[1]/h4/a/i').click
