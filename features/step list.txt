@@ -3,16 +3,16 @@ ok Then User check all menu fitur
 
 ok Then User Goto negara
 --
-Then User click tambah negara
-And User type nama negara
-And User type region
-Then user click add negara
+ok Then User click tambah negara
+ok Then User type nama negara
+ok And User type region
+ok Then user click add negara
 Then User click cancel negara
 Then User click edit negara
 Then User click hapus negara
 
 ok Then User Goto index
-
+kaowkoawk
 
 
 ok Then User Goto dokumen

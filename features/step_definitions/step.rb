@@ -82,6 +82,22 @@ Then(/^User type biaya beasiswa$/) do
   driver.find_element(:xpath,'/html/body/div/div[2]/div/div/div[1]/div[3]/div/input').send_keys'biaya'
 end
 
-Then(/^Then User click simpan$/) do
+Then(/^User click simpan$/) do
   driver.find_element(:xpath, '/html/body/div/div[1]/div[2]/ul/li[2]/a/p').click
+end
+
+Then(/^User click tambah negara$/) do
+  driver.find_element(:xpath,'/html/body/div/div[2]/div[1]/div/div[1]/div/div[2]/a/span').click
+end
+Then(/^User type nama negara$/) do
+  driver.find_element(:xpath,'//*[@id="tambahNegara"]/div/div/form/div[2]/div[1]/input').send_keys 'iki jeneng negoro'
+end
+And(/^User type region$/) do
+  driver.find_element(:xpath,'//*[@id="tambahNegara"]/div/div/form/div[2]/div[2]/input').send_keys 'sing iki region'
+end
+Then(/^User click add negara$/) do
+  driver.find_element(:xpath,'//*[@id="tambahNegara"]/div/div/form/div[3]/input[2]').click
+end
+Then(/^User click cancel negara$/) do
+  driver.find_element(:xpath,'//*[@id="tambahNegara"]/div/div/form/div[3]/input[1]').click
 end
