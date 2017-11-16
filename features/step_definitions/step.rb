@@ -59,7 +59,7 @@ end
 
 Then(/^User add beasiswa$/) do
   addbeasiswa = driver.find_element(:xpath,'/html/body/div/div[2]/div[1]/div/div[1]/div/div[2]/a/span')
-expect(addbeasiswa.text).to include('ADD DATA  BEASISWA')
+expect(addbeasiswa.text).to include('ADD DATA BEASISWA')
 addbeasiswa.click
   sleep 0.1
   driver.find_element(:xpath,'/html/body/div/div[2]/div/div/div[1]/div[1]/div/input').send_keys 'nama beasiswa'

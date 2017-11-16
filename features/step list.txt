@@ -1,0 +1,24 @@
+ Given User Open index
+
+ Then User Goto beasiswa
+
+ Then User Goto negara
+
+ Then User Goto dokumen
+
+ Then User Goto syarat
+
+Then User Goto beasiswa
+--
+Then User click add data beasiswa button
+Then User type nama beasiswa
+And User type deadline
+And User type biaya
+And User type detail beasiswa
+And User type timeline
+And User type dokumen
+And User type jenjang
+And User type syarat
+Then User click simpan
+--
+Then User click checkbox
