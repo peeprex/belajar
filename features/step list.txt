@@ -1,10 +1,20 @@
  Given User Open index
 
- Then User Goto beasiswa
 
  Then User Goto negara
+--
+Then User click tambah negara
+And User type nama negara
+And User type region
+Then user click add negara
+Then User click cancel negara
+
+
 
  Then User Goto dokumen
+--
+
+
 
  Then User Goto syarat
 
