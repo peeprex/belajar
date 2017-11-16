@@ -1,38 +1,37 @@
-ok Given User Open cms nikola
-ok Then User check all menu fitur
+Given User Open cms nikola
+Then User check all menu fitur
 
-ok Then User Goto negara
+Then User Goto negara
 --
-ok Then User click tambah negara
-ok Then User type nama negara
-ok And User type region
-ok Then user click add negara
+Then User click tambah negara
+Then User type nama negara
+And User type region
+Then user click add negara
 Then User click cancel negara
 Then User click edit negara
 Then User click hapus negara
 
-ok Then User Goto index
-kaowkoawk
+Then User Goto index
 
 
-ok Then User Goto dokumen
+Then User Goto dokumen
 --
 
 
 
-ok Then User Goto syarat
+Then User Goto syarat
 
-ok Then User Goto beasiswa
+Then User Goto beasiswa
 --
-ok Then User click add data beasiswa button
-ok Then User type nama beasiswa
-ok And User type deadline beasiswa
-ok And User type biaya beasiswa
- And User type detail beasiswa
+Then User click add data beasiswa button
+Then User type nama beasiswa
+And User type deadline beasiswa
+And User type biaya beasiswa
+And User type detail beasiswa
 And User type timeline
 And User type dokumen
 And User type jenjang
 And User type syarat
-ok Then User click simpan
+Then User click simpan
 --
-ok Then User click checkbox
+Then User click checkbox
