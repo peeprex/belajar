@@ -14,6 +14,11 @@ Then User type nama beasiswa
 And User type deadline beasiswa
 And User type biaya beasiswa
 
+Scenario: User click checkbox
+Then User Goto beasiswa
+Then User click checkbox
+
+
 Scenario: User cancel add negara
 Then User Goto negara
 Then User click tambah negara
@@ -27,3 +32,8 @@ Then User click tambah negara
 Then User type nama negara
 And User type region
 Then User click add negara
+
+Scenario: User click chackbox on negara menu
+Then User Goto negara
+Then User click checkbox
+Then User click checkbox

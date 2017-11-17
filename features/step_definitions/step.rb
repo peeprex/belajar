@@ -21,7 +21,9 @@ Then (/^User check all menu fitur$/) do
   sleep 0.1
 end
 Then (/^User Goto home$/) do
-  driver.find_element(:xpath,'/html/body/div/div[1]/div[2]/ul/li[1]/a/p').click
+  homeBtn = driver.find_element(:xpath,'/html/body/div/div[1]/div[2]/ul/li[1]/a/p')
+  expect(homeBtn.text).to include('Home')
+  homeBtn.click
 end
 
 
@@ -36,19 +38,26 @@ end
 Then (/^User Goto beasiswa$/) do
 #  beasiswaBtn.click
   beasiswaBtn = driver.find_element(:xpath, '/html/body/div/div[1]/div[2]/ul/li[2]/a/p')
+  expect(beasiswaBtn.text).to include('Beasiswa')
   beasiswaBtn.click
 end
 
 Then(/^User Goto negara$/) do
-  driver.find_element(:xpath, '/html/body/div/div[1]/div[2]/ul/li[4]/a/p').click
+  negaraBtn = driver.find_element(:xpath, '/html/body/div/div[1]/div[2]/ul/li[4]/a/p')
+  expect(negaraBtn.text).to include('Negara')
+  negaraBtn.click
 end
 
 Then(/^User Goto dokumen$/) do
-  driver.find_element(:xpath, '/html/body/div/div[1]/div[2]/ul/li[5]/a/p').click
+  dokumenBtn = driver.find_element(:xpath, '/html/body/div/div[1]/div[2]/ul/li[5]/a/p')
+  expect(dokumenBtn.text).to include('Dokumen')
+  dokumenBtn.click
 end
 
 Then(/^User Goto syarat$/) do
-  driver.find_element(:xpath, '/html/body/div/div[1]/div[2]/ul/li[6]/a/p').click
+  syaratBtn = driver.find_element(:xpath, '/html/body/div/div[1]/div[2]/ul/li[6]/a/p')
+  expect(syaratBtn.text).to include('Syarat')
+  syaratBtn.click
 end
 
 Then (/^User click checkbox$/) do
@@ -90,16 +99,19 @@ Then(/^User click tambah negara$/) do
   driver.find_element(:xpath,'/html/body/div/div[2]/div[1]/div/div[1]/div/div[2]/a/span').click
 end
 Then(/^User type nama negara$/) do
-  driver.find_element(:xpath,'//*[@id="tambahNegara"]/div/div/form/div[2]/div[1]/input').send_keys 'iki jeneng negoro'
+  driver.find_element(:xpath,'/html/body/div[1]/div[2]/div[2]/div/div/form/div[2]/div[1]/input').send_keys 'iki jeneng negoro'
 end
 And(/^User type region$/) do
-  driver.find_element(:xpath,'//*[@id="tambahNegara"]/div/div/form/div[2]/div[2]/input').send_keys 'sing iki region'
+  driver.find_element(:xpath,'/html/body/div[1]/div[2]/div[2]/div/div/form/div[2]/div[2]/input').send_keys 'sing iki region'
 end
 Then(/^User click add negara$/) do
-  driver.find_element(:xpath,'//*[@id="tambahNegara"]/div/div/form/div[3]/input[2]').click
+  driver.find_element(:xpath,'/html/body/div[1]/div[2]/div[2]/div/div/form/div[3]/input[2]').click
 end
-#And(/^User type detail beasiswa$/) do
-#  driver.find_element(:xpath,'').send_keys 'beasiswa detail'
+Then(/^User click cancel negara$/) do
+  driver.find_element(:xpath,'/html/body/div[1]/div[2]/div[2]/div/div/form/div[3]/input[1]').click
+end
+#And (/^User type detail beasiswa$/) do
+#  driver.find_element(:xpath,'//*[@id="Detail"]').send_keys 'beasiswa detail'
 #end
 #And(/^User type timeline$/) do
 #  driver.find_element(:xpath,'//*[@id="Detail"]').send_keys 'beasiswa detail'
