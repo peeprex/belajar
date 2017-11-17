@@ -20,7 +20,7 @@ Then (/^User check all menu fitur$/) do
   driver.find_element(:xpath,'/html/body/div/div[2]/div/div/div[2]/div[1]/h4/a/i').click
   sleep 0.1
 end
-Then (/^User Goto index$/) do
+Then (/^User Goto home$/) do
   driver.find_element(:xpath,'/html/body/div/div[1]/div[2]/ul/li[1]/a/p').click
 end
 
@@ -98,6 +98,18 @@ end
 Then(/^User click add negara$/) do
   driver.find_element(:xpath,'//*[@id="tambahNegara"]/div/div/form/div[3]/input[2]').click
 end
-Then(/^User click cancel negara$/) do
-  driver.find_element(:xpath,'//*[@id="tambahNegara"]/div/div/form/div[3]/input[1]').click
-end
+#And(/^User type detail beasiswa$/) do
+#  driver.find_element(:xpath,'').send_keys 'beasiswa detail'
+#end
+#And(/^User type timeline$/) do
+#  driver.find_element(:xpath,'//*[@id="Detail"]').send_keys 'beasiswa detail'
+#end
+#And(/^User type dokumen$/) do
+#  driver.find_element(:xpath,'//*[@id="Detail"]').send_keys 'beasiswa detail'
+#end
+#And(/^User type jenjang$/) do
+#  driver.find_element(:xpath,//*[@id="Detail"]).send_keys 'beasiswa detail'
+#end
+#And(/^User type syarat$/) do
+#  driver.find_element(:xpath,//*[@id="Detail"]).send_keys 'beasiswa detail'
+#end
